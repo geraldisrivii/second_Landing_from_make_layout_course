@@ -1,0 +1,27 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @include table{
+    font-size: 53%;
+  }
+  @include phone{
+    font-size: 42%;
+  }
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: $color-grey;
+}
+a{
+  color: $color-grey;
+  text-decoration: none;
+}

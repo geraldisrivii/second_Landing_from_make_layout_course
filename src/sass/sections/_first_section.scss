@@ -1,0 +1,21 @@
+.first-container {
+    width: 100%;
+    height: 100vh;
+    background: $gradient-brown-black, url('../img/first_section/baloons_start.jpg') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+}
+
+.first-container-description {
+    margin: 0 auto;
+    text-align: center;
+
+    &__header {
+        margin-bottom: 10px;
+    }
+
+    &__header-sub {
+        margin-bottom: 50px;
+    }
+}
