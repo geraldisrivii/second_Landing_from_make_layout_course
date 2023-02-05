@@ -1,20 +1,25 @@
 .third-section {
-    background: url('../img/third_section/pexels-julia-volk-6118899 1.png') center / cover no-repeat; 
+    background: url('../img/third_section/pexels-julia-volk-6118899 1.png') center / cover no-repeat;
     padding: 10px;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    @include table{
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+
+    @include table {
         clip-path: none;
     }
+
     @include adaptive_images {
         background: url('../img/third_section/pexels-julia-volk-6118899 1-big.png');
     }
 }
-.grid-box{
+
+.grid-box {
     padding: 215px 0px;
-    @include table{
+
+    @include table {
         clip-path: none;
         padding: 115px 0px;
     }
+
     display: grid;
     gap: 60px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -22,15 +27,24 @@
     justify-content: center;
     max-width: 1300px;
     margin: 0 auto;
+    grid-auto-flow: dense;
+
     &-element {
         text-align: center;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 5px;
         padding: 25px;
-        &__image{
-            margin-bottom: 25px;
+        &_span_2{
+            @media (min-width: 1200px){
+                grid-column: span 2;
+            }
         }
-        &__header{
+        &__image {
+            margin-bottom: 25px;
+            width: 63px;
+        }
+
+        &__header {
             margin-bottom: 10px;
         }
     }
