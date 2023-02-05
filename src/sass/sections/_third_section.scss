@@ -34,11 +34,6 @@
         background: rgba(255, 255, 255, 0.8);
         border-radius: 5px;
         padding: 25px;
-        &_span_2{
-            @media (min-width: 1200px){
-                grid-column: span 2;
-            }
-        }
         &__image {
             margin-bottom: 25px;
             width: 63px;
