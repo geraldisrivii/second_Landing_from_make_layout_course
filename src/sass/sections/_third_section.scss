@@ -25,6 +25,7 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-items: center;
     justify-content: center;
+    align-items: center;
     max-width: 1300px;
     margin: 0 auto;
     grid-auto-flow: dense;
@@ -34,7 +35,6 @@
         background: rgba(255, 255, 255, 0.8);
         border-radius: 5px;
         padding: 25px;
-
         &__image {
             margin-bottom: 25px;
             width: 63px;
