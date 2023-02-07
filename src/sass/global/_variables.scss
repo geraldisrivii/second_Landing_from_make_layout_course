@@ -16,6 +16,6 @@ $color-grey: rgba(119,119,119,1);
 $header_gradient: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
 $gradient-brown-black: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%);
 // Shadows
-$shadow: 0px 4px 4px rgba(0,0,0,0.250), 0px 4px 4px rgba(0,0,0,0.250), 0px 15px 40px rgba(0,0,0,0.150);
+$shadow: (2px .4rem .4rem rgba(0, 0, 0, 0.3));
 
 $shadow-light: 0px 4px 4px rgba(0,0,0,0.100);
