@@ -130,7 +130,7 @@
                     <div class="programm-cards-card__side programm-cards-card__side_back">
                         <p class="programm-cards-card__text header-sub">ПОЛНАЯ СТОИМОСТЬ:</p>
                         <p class="programm-cards-card__coast">5990₽</p>
-                        <a href="#!" class="programm-cards-card__button"><i
+                        <a href="#!" class="button programm-cards-card__button"><i
                                 class="text-into-button">ЗАБРОНИРОВАТЬ</i></a>
                     </div>
                 </div>
@@ -176,11 +176,17 @@
             <div class="content-box">
                 <div class="content-box__background"></div>
                 <div class="content-box__elements">
-                    <h3 class="content-box__header header-description">ЗАБРОНИРОВАТЬ ТУР</h3>
+                    <h3 class="content-box__header header-description">ЗАКАЗАТЬ ТУР</h3>
                     <div class="input-box">
                         <div class="input-element">
-                            <input placeholder="Имя Фамилия" type="text" id="text1">
-                            <label for="text1">Имя Фамилия</label>
+                            <input class="input-element__input" placeholder="Имя Фамилия" type="text" id="text1">
+                            <div class="input-element__indication"></div>
+                            <label class="input-element__label" for="text1">Имя Фамилия</label>
+                        </div>
+                        <div class="input-element">
+                            <input class="input-element__input" placeholder="Почтовый адрес" type="text" id="text2">
+                            <div class="input-element__indication"></div>
+                            <label class="input-element__label" for="text2">Почтовый адрес</label>
                         </div>
                     </div>
                     <div class="checboxes">
@@ -188,8 +194,12 @@
                             <input name="input-radio-button" type="radio" class="radio-button__input" id="rb1" />
                             <label class="radio-button__label" for="rb1"><span class="radio-button__span"></span>Групповой тур</label>
                         </div>
+                        <div class="radio-button">
+                            <input name="input-radio-button" type="radio" class="radio-button__input" id="rb2" />
+                            <label class="radio-button__label" for="rb2"><span class="radio-button__span"></span>Индивидуальный тур</label>
+                        </div>
                     </div>
-                    <a href = "#!" class="button button_animated"><i class="text-into-button">ЗАБРОНИРОВАТЬ</i></a>
+                    <a href = "#!" class="content-box__button button button_animated"><i class="text-into-button">ЗАБРОНИРОВАТЬ</i></a>
                 </div>
             </div>
         </section>

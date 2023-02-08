@@ -5,12 +5,21 @@
         padding-top: 80px;
         margin-bottom: 80px;
     }
+
     margin-bottom: 80px;
 }
 
 .programm-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 341px);
+    @include laptop{
+        grid-template-columns: 600px;
+    }
+
+    @include phone {
+        grid-template-columns: repeat(auto-fit, 320px)
+    }
+
     margin-bottom: 80px;
     gap: 60px;
     justify-content: center;
@@ -20,8 +29,13 @@
     max-width: 341px;
     position: relative;
     border-radius: 2%;
-    position: relative;
     height: 500px;
+    @include laptop{
+        max-width: 600px;
+    }
+    @include phone {
+        max-width: 321px;
+    }
 
     &:hover>&__side_back {
         transform: rotateY(0deg);
@@ -106,16 +120,20 @@
         letter-spacing: 2px;
         color: white;
     }
-    &__button{
+
+    &__button {
         width: min-content;
     }
 }
-#main-action-button{
-    background-color: rgb(194, 129, 8);
-    &::after{
-        background-color:rgb(194, 129, 8);
+
+#main-action-button {
+    background-color: $brown-color-darck;
+
+    &::after {
+        background-color: $brown-color-darck;
     }
-    i{
+
+    i {
         color: white;
     }
 }

@@ -45,10 +45,10 @@
     min-height: 364px;
     position: relative;
     @include phone {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-auto-columns: minmax(200px, 320px);
         gap: 20px;
-        align-items: center;
+        justify-content: center;
     }
     @include laptop{
         margin: 0 auto;
