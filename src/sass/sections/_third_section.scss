@@ -1,6 +1,6 @@
 .third-section {
     background: url('../img/third_section/pexels-julia-volk-61188991.webp') center / cover no-repeat;
-    padding: 10px;
+    padding: 20px;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 
     @include table {
@@ -31,6 +31,10 @@
     grid-auto-flow: dense;
 
     &-element {
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.03);
+        }
         text-align: center;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 5px;

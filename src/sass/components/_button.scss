@@ -29,6 +29,9 @@
     border-radius: 50px;
     display: inline-block;
     z-index: -1;
+    @include phone{
+      display: none;
+    }
   }
   i {
     font-style: normal;

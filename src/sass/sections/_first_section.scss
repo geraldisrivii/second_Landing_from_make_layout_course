@@ -2,6 +2,12 @@
     width: 100%;
     height: 100vh;
     background: $gradient-brown-black, url('../img/first_section/baloons_start.webp') center / cover no-repeat;
+    @include table{
+        background: $gradient-brown-black, url('../img/Adaptive/baloons_start_table.webp') center / cover no-repeat;
+    }
+    @include phone{
+        background: $gradient-brown-black, url('../img/Adaptive/baloons_start_phone.webp') center / cover no-repeat;
+    }
     display: flex;
     align-items: center;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);

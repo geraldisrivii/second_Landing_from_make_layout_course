@@ -13,6 +13,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     text-shadow: $shadow-light;
+    transition: all .5s;
+    display: inline-block;
+    &:hover{
+        transform: translateX(10px);
+    }
 }
 .header-description-card{
     @include header(20px,$color-grey , 700, 2px)
