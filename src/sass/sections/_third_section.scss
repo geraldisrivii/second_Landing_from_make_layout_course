@@ -1,0 +1,52 @@
+.third-section {
+    background: url('../img/third_section/pexels-julia-volk-61188991.webp') center / cover no-repeat;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+
+    @include table {
+        clip-path: none;
+    }
+
+    @include adaptive_images {
+        background: url('../img/third_section/pexels-julia-volk-61188991-big.webp');
+    }
+}
+
+.grid-box {
+    padding: 215px 0px;
+
+    @include table {
+        clip-path: none;
+        padding: 115px 0px;
+    }
+
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-auto-flow: dense;
+
+    &-element {
+        min-width: 260px;
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.03);
+        }
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        padding: 25px;
+        &__image {
+            margin-bottom: 25px;
+            width: 63px;
+        }
+
+        &__header {
+            margin-bottom: 10px;
+        }
+    }
+}

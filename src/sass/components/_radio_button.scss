@@ -1,0 +1,29 @@
+.radio-button {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  &__input {
+    visibility: hidden;
+    margin-right: 1.8rem;
+  }
+  &__input:checked + &__label > &__span {
+    background-color: #A24F03;
+  }
+  &__label {
+    cursor: pointer;
+    position: relative;
+    font-size: 18px
+  }
+  &__span {
+    transition: all .5s;
+    height: 18px;
+    width: 18px;
+    outline-offset: .4rem;
+    position: absolute;
+    border-radius: 100%;
+    outline: .3rem solid #A24F03;
+    top: 0rem;
+    left: -3.8rem;
+  }
+}
