@@ -17,14 +17,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-
     @include laptop {
         grid-template-columns: 1fr
     }
-
+    &__pair-1 {
+        @include preliminary_collapse;
+    }
     &__pair-2 {
         text-align: left;
         margin-bottom: 50px;
+        @include preliminary_collapse;
     }
 }
 

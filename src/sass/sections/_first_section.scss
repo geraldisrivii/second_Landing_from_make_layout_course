@@ -17,6 +17,9 @@
 .first-container-description {
     margin: 0 auto;
     text-align: center;
+    &__button {
+        margin-bottom: 30px;
+    }
     &__header {
         margin-bottom: 10px;
     }

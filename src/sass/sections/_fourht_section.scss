@@ -12,18 +12,22 @@
 .programm-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 341px);
-    @media (max-width: 1200px){
+
+    @media (max-width: 1200px) {
         grid-template-columns: 850px;
     }
-    @include table{
+
+    @include table {
         grid-template-columns: 1fr;
     }
+
     margin-bottom: 80px;
     gap: 60px;
     justify-content: center;
     align-content: center;
     padding: 0px 30px;
-    @include phone{
+
+    @include phone {
         padding: 0px 10px;
     }
 }
@@ -33,9 +37,11 @@
     border-radius: 2%;
     height: 500px;
     perspective: 1500px;
-    @media (max-width: 1200px){
+    @include preliminary_collapse;
+    @media (max-width: 1200px) {
         max-width: 850px;
     }
+
     &:hover>&__side_back {
         transform: rotateY(0deg);
         visibility: visible;
@@ -122,17 +128,5 @@
 
     &__button {
         width: min-content;
-    }
-}
-
-#main-action-button {
-    background-color: $brown-color-darck;
-
-    &::after {
-        background-color: $brown-color-darck;
-    }
-
-    i {
-        color: white;
     }
 }

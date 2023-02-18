@@ -37,3 +37,9 @@ a{
   color: $color-grey;
   text-decoration: none;
 }
+@mixin preliminary_collapse{
+  visibility: collapse;
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}

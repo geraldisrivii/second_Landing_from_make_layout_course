@@ -14,9 +14,6 @@
     &__header {
         color: white;
     }
-
-    &__button {}
-
     &__video {
         position: absolute;
         top: 0;
@@ -42,7 +39,6 @@
     display: grid;
     padding: 80px 140px;
     gap: 80px;
-
     @include laptop {
         padding: 80px 80px;
     }
@@ -54,10 +50,10 @@
 
 .review {
     background: rgba(255, 255, 255, 0.6);
-    transform: skew(-20deg);
+    @include preliminary_collapse;
+    transform: skew(-20deg), translateY(20px);
     padding: 50px 120px;
     box-shadow: $shadow;
-
     @include laptop {
         padding: 10px 20px;
     }

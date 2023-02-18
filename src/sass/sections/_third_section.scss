@@ -2,7 +2,7 @@
     background: url('../img/third_section/pexels-julia-volk-61188991.webp') center / cover no-repeat;
     padding: 20px;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-
+    overflow: hidden;
     @include table {
         clip-path: none;
     }
@@ -14,25 +14,24 @@
 
 .grid-box {
     padding: 215px 0px;
-
+    overflow: hidden;
     @include table {
         clip-path: none;
         padding: 115px 0px;
     }
-
-    display: grid;
-    gap: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 60px;
     max-width: 1300px;
     margin: 0 auto;
-    grid-auto-flow: dense;
-
     &-element {
-        min-width: 260px;
+        @include preliminary_collapse;
+        @include phone{
+            width: 100%;
+        }
         transition: all .5s;
+        width: 260px;
         &:hover{
             transform: scale(1.03);
         }
